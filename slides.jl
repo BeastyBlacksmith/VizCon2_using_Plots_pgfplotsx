@@ -5,43 +5,25 @@
 # @__{footer("""<h2 style="margin-left:10ex;">Footer </h2>""")}__
 #
 #
-# Title
+# The Plots pgfplotsx-backend
 # =====
 #----------------------------------------
 # @__{slide()}__
 #
-# ## This is a slide with  some subslides
+# ## Why? 
 #
-# It contains an executable cell with Julia code
-println("Hello World");
-#----
-# @__{subslide()}__
-# ### This is a sub-slide, again with executable code
-println("Hello World from the subslide");
+# - Missing features
+# - (Hopefully) easier to maintain
 #----------------------------------------
 # @__{slide()}__
-#=
-
-## Another slide with fragments
-
-Here, we use block comments ( `#=` and `=#` must be placed in the first column),
-and we can nicely use LaTeX formulas.
-
-\begin{pmatrix}
-  \int_a^b sin(x^2) dx & X\cap\emptyset=\emptyset & X\cup\emptyset=X\\
-  \Rightarrow& x^{y^z}& \sin(2\pi)
-\end{pmatrix}
-
-=#
-#-
-# @__{fragment()}__
-# - First item
-#-
-# @__{fragment()}__
-# - Second item
-#-
-# @__{fragment()}__
-# - Third item
-
-
-
+# 
+# ## What's new?
+#----------------------------------------
+# @__{slide()}__
+# 
+# ## What's missing?
+#----------------------------------------
+# @__{slide()}__
+# 
+# ## Lessons learned
+#----------------------------------------

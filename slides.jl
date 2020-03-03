@@ -1,8 +1,7 @@
 #----------------------------------------
 # @__{slide()}__
 # @__{theme("simple")}__
-# @__{header("""<h1 style="margin-left:20ex;>Demo Slides for jl2nb</h1>""")}__
-# @__{footer("""<h2 style="margin-left:10ex;">Footer </h2>""")}__
+# @__{header("""<h1 style="margin-left:20ex;>pgfplotsx()</h1>""")}__
 #
 #
 # The Plots pgfplotsx-backend

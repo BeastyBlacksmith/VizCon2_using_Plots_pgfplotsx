@@ -55,6 +55,14 @@ pl = plot(
         w = 5,
 )
 pgfx_plot = plot!(pl, zeros(n), zeros(n), 1:n, w = 10)
+#----
+# @__{subslide()}__
+#
+# ### Surface plots
+f(x, y) = exp(sqrt(x^2 + y^2))
+xs = range(-1, 1, length = 20)
+ys = range(-1, 1, length = 20)
+surface(xs, ys, [f(x, y) for x in xs, y in ys], label = "Cosy surface")
 #----------------------------------------
 # @__{slide()}__
 #

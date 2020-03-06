@@ -67,8 +67,13 @@ surface(xs, ys, [f(x, y) for x in xs, y in ys], label = "Cosy surface")
 # @__{slide()}__
 #
 # ## What's missing?
+#
+# - Layouting is a mess (especially setting margins)
+# - [Meta-Issue](https://github.com/JuliaPlots/Plots.jl/issues/2290)
 #----------------------------------------
 # @__{slide()}__
 #
 # ## Lessons learned
+#
+# - might make sense to directly target pgf/TikZ if used as backend
 #----------------------------------------

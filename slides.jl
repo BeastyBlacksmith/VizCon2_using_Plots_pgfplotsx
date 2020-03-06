@@ -63,6 +63,23 @@ f(x, y) = exp(sqrt(x^2 + y^2))
 xs = range(-1, 1, length = 20)
 ys = range(-1, 1, length = 20)
 surface(xs, ys, [f(x, y) for x in xs, y in ys], label = "Cosy surface")
+#----
+# @__{subslide()}__
+#
+# ### Quiver plots
+x = (-2pi):0.2:(2 * pi)
+y = sin.(x)
+u = ones(length(x))
+v = cos.(x)
+plot(x, y, quiver = (u, v), arrow = true, xlims = (-7, 8), ylims = (-1.5, 1.5))
+#----
+# @__{subslide()}__
+#
+# ### Ribbons
+aa = rand(10)
+bb = rand(10)
+cc = rand(10)
+plot(collect(1:10), cc, ribbon = (bb, aa))
 #----------------------------------------
 # @__{slide()}__
 #

@@ -80,6 +80,12 @@ aa = rand(10)
 bb = rand(10)
 cc = rand(10)
 plot(collect(1:10), cc, ribbon = (bb, aa))
+#----
+# @__{subslide()}__
+#
+# ### Fill between functions
+plot(sin, 0, 2pi)
+plot!(cos, 0, 2pi, fillrange = (2, 1)) # numbers are the series indices
 #----------------------------------------
 # @__{slide()}__
 #

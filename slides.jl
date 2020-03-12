@@ -93,10 +93,26 @@ plot!(cos, 0, 2pi, fillrange = (2, 1)) # numbers are the series indices
 #
 # - Layouting is a mess (especially setting margins)
 # - [Meta-Issue](https://github.com/JuliaPlots/Plots.jl/issues/2290)
+#----
+# @__{subslide()}__
+#
+# ### Layouting
+#
+# - On the plots side, we have (right/left/top/bottom) margins, bounding box of the plotarea and boinding box of a subplot.
+# - On the pgfplots side, we have (right-left/top-bottom) margins (inner and outer), height and width of the axis as well as x/y-shift.
+# - ⇢ No 1:1 mapping
+# - In addition to that pgfplots have a page (which is currently a4paper by default).
 #----------------------------------------
 # @__{slide()}__
 #
 # ## Lessons learned
 #
+# - translate first and "improve" afterwards
 # - might make sense to directly target pgf/TikZ if used as backend
+#----
+# @__{subslide()}__
+#
+# Pgfplots is a convenience layer over pgf/TikZ. Targeting it for wrapper packages like PGFPlots/X.jl is a good thing.
+# As a backend you don't really need the convenience, because that is already built in the frontend, you are more looking for fine grained control.
+# Therefore, if I were to write a LaTeX Makie-backend it would be called `PGFMakie.jl`. ;)  
 #----------------------------------------

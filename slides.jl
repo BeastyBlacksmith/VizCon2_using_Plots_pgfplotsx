@@ -13,6 +13,29 @@
 #
 # - Missing features
 # - (Hopefully) easier to maintain
+#----
+# @__{subslide()}__
+#
+# - PGFPlotsX has better documentation
+# - it makes the right promises
+#----------------------------------------
+# @__{slide()}__
+#
+# ## How?
+#----
+# @__{subslide()}__
+#
+# ### Plots -> PGFPlotsX -> LuaLaTeX -> pdf -> convert
+#
+# - translates `plotattributes` to PGFPlotsX.Options + Types (e.g. `PGFPlotsX.Axis`)
+# - creates a `.tex`-file that gets compiled to pdf
+# - this gets then converted to the desired output format
+#----
+# @__{subslide()}__
+#
+# ### Issues
+#
+# - LaTeX dependency + binary dependencies for conversion
 #----------------------------------------
 # @__{slide()}__
 #
@@ -114,5 +137,5 @@ plot!(cos, 0, 2pi, fillrange = (2, 1)) # numbers are the series indices
 #
 # Pgfplots is a convenience layer over pgf/TikZ. Targeting it for wrapper packages like PGFPlots/X.jl is a good thing.
 # As a backend you don't really need the convenience, because that is already built in the frontend, you are more looking for fine grained control.
-# Therefore, if I were to write a LaTeX Makie-backend it would be called `PGFMakie.jl`. ;)  
+# Therefore, if I were to write a LaTeX Makie-backend it would be called `PGFMakie.jl`. ;)
 #----------------------------------------
